@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240A4A1E18FB6F34001B98A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240A4A1D18FB6F34001B98A8 /* Security.framework */; };
+		245A6E7A18EA00F30087A655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7918EA00F30087A655 /* Foundation.framework */; };
+		245A6E7C18EA00F30087A655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7B18EA00F30087A655 /* CoreGraphics.framework */; };
+		245A6E7E18EA00F30087A655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7D18EA00F30087A655 /* UIKit.framework */; };
+		245A6E8018EA00F30087A655 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7F18EA00F30087A655 /* CoreData.framework */; };
+		245A6E8618EA00F30087A655 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 245A6E8418EA00F30087A655 /* InfoPlist.strings */; };
+		245A6E8818EA00F30087A655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 245A6E8718EA00F30087A655 /* main.m */; };
+		245A6E8C18EA00F30087A655 /* CNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245A6E8B18EA00F30087A655 /* CNAppDelegate.m */; };
+		245A6E8F18EA00F30087A655 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245A6E8D18EA00F30087A655 /* Main_iPhone.storyboard */; };
+		245A6E9218EA00F30087A655 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245A6E9018EA00F30087A655 /* Main_iPad.storyboard */; };
+		245A6E9518EA00F30087A655 /* CryptoNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 245A6E9318EA00F30087A655 /* CryptoNote.xcdatamodeld */; };
+		245A6E9818EA00F40087A655 /* CNMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245A6E9718EA00F40087A655 /* CNMasterViewController.m */; };
+		245A6E9B18EA00F40087A655 /* CNDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245A6E9A18EA00F40087A655 /* CNDetailViewController.m */; };
+		245A6E9D18EA00F40087A655 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245A6E9C18EA00F40087A655 /* Images.xcassets */; };
+		245A6EA418EA00F40087A655 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6EA318EA00F40087A655 /* XCTest.framework */; };
+		245A6EA518EA00F40087A655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7918EA00F30087A655 /* Foundation.framework */; };
+		245A6EA618EA00F40087A655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7D18EA00F30087A655 /* UIKit.framework */; };
+		245A6EA718EA00F40087A655 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245A6E7F18EA00F30087A655 /* CoreData.framework */; };
+		245A6EAF18EA00F40087A655 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 245A6EAD18EA00F40087A655 /* InfoPlist.strings */; };
+		245A6EB118EA00F40087A655 /* CryptoNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 245A6EB018EA00F40087A655 /* CryptoNoteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		245A6EA818EA00F40087A655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 245A6E6E18EA00F30087A655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 245A6E7518EA00F30087A655;
+			remoteInfo = CryptoNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		240A4A1D18FB6F34001B98A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		245A6E7618EA00F30087A655 /* CryptoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		245A6E7918EA00F30087A655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		245A6E7B18EA00F30087A655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		245A6E7D18EA00F30087A655 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		245A6E7F18EA00F30087A655 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		245A6E8318EA00F30087A655 /* CryptoNote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoNote-Info.plist"; sourceTree = "<group>"; };
+		245A6E8518EA00F30087A655 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		245A6E8718EA00F30087A655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		245A6E8918EA00F30087A655 /* CryptoNote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoNote-Prefix.pch"; sourceTree = "<group>"; };
+		245A6E8A18EA00F30087A655 /* CNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNAppDelegate.h; sourceTree = "<group>"; };
+		245A6E8B18EA00F30087A655 /* CNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNAppDelegate.m; sourceTree = "<group>"; };
+		245A6E8E18EA00F30087A655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		245A6E9118EA00F30087A655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		245A6E9418EA00F30087A655 /* CryptoNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoNote.xcdatamodel; sourceTree = "<group>"; };
+		245A6E9618EA00F30087A655 /* CNMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNMasterViewController.h; sourceTree = "<group>"; };
+		245A6E9718EA00F40087A655 /* CNMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNMasterViewController.m; sourceTree = "<group>"; };
+		245A6E9918EA00F40087A655 /* CNDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNDetailViewController.h; sourceTree = "<group>"; };
+		245A6E9A18EA00F40087A655 /* CNDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNDetailViewController.m; sourceTree = "<group>"; };
+		245A6E9C18EA00F40087A655 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		245A6EA218EA00F40087A655 /* CryptoNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		245A6EA318EA00F40087A655 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		245A6EAC18EA00F40087A655 /* CryptoNoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoNoteTests-Info.plist"; sourceTree = "<group>"; };
+		245A6EAE18EA00F40087A655 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		245A6EB018EA00F40087A655 /* CryptoNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoNoteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		245A6E7318EA00F30087A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240A4A1E18FB6F34001B98A8 /* Security.framework in Frameworks */,
+				245A6E7C18EA00F30087A655 /* CoreGraphics.framework in Frameworks */,
+				245A6E8018EA00F30087A655 /* CoreData.framework in Frameworks */,
+				245A6E7E18EA00F30087A655 /* UIKit.framework in Frameworks */,
+				245A6E7A18EA00F30087A655 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245A6E9F18EA00F40087A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245A6EA418EA00F40087A655 /* XCTest.framework in Frameworks */,
+				245A6EA718EA00F40087A655 /* CoreData.framework in Frameworks */,
+				245A6EA618EA00F40087A655 /* UIKit.framework in Frameworks */,
+				245A6EA518EA00F40087A655 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		245A6E6D18EA00F30087A655 = {
+			isa = PBXGroup;
+			children = (
+				245A6E8118EA00F30087A655 /* CryptoNote */,
+				245A6EAA18EA00F40087A655 /* CryptoNoteTests */,
+				245A6E7818EA00F30087A655 /* Frameworks */,
+				245A6E7718EA00F30087A655 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		245A6E7718EA00F30087A655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				245A6E7618EA00F30087A655 /* CryptoNote.app */,
+				245A6EA218EA00F40087A655 /* CryptoNoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		245A6E7818EA00F30087A655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				240A4A1D18FB6F34001B98A8 /* Security.framework */,
+				245A6E7918EA00F30087A655 /* Foundation.framework */,
+				245A6E7B18EA00F30087A655 /* CoreGraphics.framework */,
+				245A6E7D18EA00F30087A655 /* UIKit.framework */,
+				245A6E7F18EA00F30087A655 /* CoreData.framework */,
+				245A6EA318EA00F40087A655 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		245A6E8118EA00F30087A655 /* CryptoNote */ = {
+			isa = PBXGroup;
+			children = (
+				245A6E8A18EA00F30087A655 /* CNAppDelegate.h */,
+				245A6E8B18EA00F30087A655 /* CNAppDelegate.m */,
+				245A6E8D18EA00F30087A655 /* Main_iPhone.storyboard */,
+				245A6E9018EA00F30087A655 /* Main_iPad.storyboard */,
+				245A6E9618EA00F30087A655 /* CNMasterViewController.h */,
+				245A6E9718EA00F40087A655 /* CNMasterViewController.m */,
+				245A6E9918EA00F40087A655 /* CNDetailViewController.h */,
+				245A6E9A18EA00F40087A655 /* CNDetailViewController.m */,
+				245A6E9C18EA00F40087A655 /* Images.xcassets */,
+				245A6E9318EA00F30087A655 /* CryptoNote.xcdatamodeld */,
+				245A6E8218EA00F30087A655 /* Supporting Files */,
+			);
+			path = CryptoNote;
+			sourceTree = "<group>";
+		};
+		245A6E8218EA00F30087A655 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				245A6E8318EA00F30087A655 /* CryptoNote-Info.plist */,
+				245A6E8418EA00F30087A655 /* InfoPlist.strings */,
+				245A6E8718EA00F30087A655 /* main.m */,
+				245A6E8918EA00F30087A655 /* CryptoNote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245A6EAA18EA00F40087A655 /* CryptoNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				245A6EB018EA00F40087A655 /* CryptoNoteTests.m */,
+				245A6EAB18EA00F40087A655 /* Supporting Files */,
+			);
+			path = CryptoNoteTests;
+			sourceTree = "<group>";
+		};
+		245A6EAB18EA00F40087A655 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				245A6EAC18EA00F40087A655 /* CryptoNoteTests-Info.plist */,
+				245A6EAD18EA00F40087A655 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		245A6E7518EA00F30087A655 /* CryptoNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245A6EB418EA00F40087A655 /* Build configuration list for PBXNativeTarget "CryptoNote" */;
+			buildPhases = (
+				245A6E7218EA00F30087A655 /* Sources */,
+				245A6E7318EA00F30087A655 /* Frameworks */,
+				245A6E7418EA00F30087A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoNote;
+			productName = CryptoNote;
+			productReference = 245A6E7618EA00F30087A655 /* CryptoNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		245A6EA118EA00F40087A655 /* CryptoNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245A6EB718EA00F40087A655 /* Build configuration list for PBXNativeTarget "CryptoNoteTests" */;
+			buildPhases = (
+				245A6E9E18EA00F40087A655 /* Sources */,
+				245A6E9F18EA00F40087A655 /* Frameworks */,
+				245A6EA018EA00F40087A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				245A6EA918EA00F40087A655 /* PBXTargetDependency */,
+			);
+			name = CryptoNoteTests;
+			productName = CryptoNoteTests;
+			productReference = 245A6EA218EA00F40087A655 /* CryptoNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		245A6E6E18EA00F30087A655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = philwebster;
+				TargetAttributes = {
+					245A6EA118EA00F40087A655 = {
+						TestTargetID = 245A6E7518EA00F30087A655;
+					};
+				};
+			};
+			buildConfigurationList = 245A6E7118EA00F30087A655 /* Build configuration list for PBXProject "CryptoNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 245A6E6D18EA00F30087A655;
+			productRefGroup = 245A6E7718EA00F30087A655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				245A6E7518EA00F30087A655 /* CryptoNote */,
+				245A6EA118EA00F40087A655 /* CryptoNoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		245A6E7418EA00F30087A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245A6E9218EA00F30087A655 /* Main_iPad.storyboard in Resources */,
+				245A6E9D18EA00F40087A655 /* Images.xcassets in Resources */,
+				245A6E8F18EA00F30087A655 /* Main_iPhone.storyboard in Resources */,
+				245A6E8618EA00F30087A655 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245A6EA018EA00F40087A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245A6EAF18EA00F40087A655 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		245A6E7218EA00F30087A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245A6E9B18EA00F40087A655 /* CNDetailViewController.m in Sources */,
+				245A6E8818EA00F30087A655 /* main.m in Sources */,
+				245A6E9518EA00F30087A655 /* CryptoNote.xcdatamodeld in Sources */,
+				245A6E8C18EA00F30087A655 /* CNAppDelegate.m in Sources */,
+				245A6E9818EA00F40087A655 /* CNMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245A6E9E18EA00F40087A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245A6EB118EA00F40087A655 /* CryptoNoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		245A6EA918EA00F40087A655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 245A6E7518EA00F30087A655 /* CryptoNote */;
+			targetProxy = 245A6EA818EA00F40087A655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		245A6E8418EA00F30087A655 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245A6E8518EA00F30087A655 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		245A6E8D18EA00F30087A655 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245A6E8E18EA00F30087A655 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		245A6E9018EA00F30087A655 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245A6E9118EA00F30087A655 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		245A6EAD18EA00F40087A655 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245A6EAE18EA00F40087A655 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		245A6EB218EA00F40087A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		245A6EB318EA00F40087A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		245A6EB518EA00F40087A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoNote/CryptoNote-Prefix.pch";
+				INFOPLIST_FILE = "CryptoNote/CryptoNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		245A6EB618EA00F40087A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoNote/CryptoNote-Prefix.pch";
+				INFOPLIST_FILE = "CryptoNote/CryptoNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		245A6EB818EA00F40087A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoNote.app/CryptoNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoNote/CryptoNote-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CryptoNoteTests/CryptoNoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		245A6EB918EA00F40087A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoNote.app/CryptoNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoNote/CryptoNote-Prefix.pch";
+				INFOPLIST_FILE = "CryptoNoteTests/CryptoNoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		245A6E7118EA00F30087A655 /* Build configuration list for PBXProject "CryptoNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245A6EB218EA00F40087A655 /* Debug */,
+				245A6EB318EA00F40087A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245A6EB418EA00F40087A655 /* Build configuration list for PBXNativeTarget "CryptoNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245A6EB518EA00F40087A655 /* Debug */,
+				245A6EB618EA00F40087A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245A6EB718EA00F40087A655 /* Build configuration list for PBXNativeTarget "CryptoNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245A6EB818EA00F40087A655 /* Debug */,
+				245A6EB918EA00F40087A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		245A6E9318EA00F30087A655 /* CryptoNote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				245A6E9418EA00F30087A655 /* CryptoNote.xcdatamodel */,
+			);
+			currentVersion = 245A6E9418EA00F30087A655 /* CryptoNote.xcdatamodel */;
+			path = CryptoNote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 245A6E6E18EA00F30087A655 /* Project object */;
+}
